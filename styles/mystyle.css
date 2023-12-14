@@ -21,6 +21,11 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+@media(max-width:768px){
+    .container{
+        width: 95%;
+    }
+}
 /*header*/
 .site-init{
     background-image: url(/img/header.jpg);
@@ -39,23 +44,33 @@ a{
     height: 100px;
     align-items: center;
 }
+@media(max-width:768px){
+    .bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-init{
+        height: 20vh;
+    }
+}
 
 .site-secondary{
     background-color: #1f1f1f;
     color: white;
 }
-.bar{
-    display: flex;
-    justify-content: space-around;
-    height: 100px;
-    align-items: center;
-}
+
 /*more about us*/
 .more-about-container{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 margin-top: 40%;
+}
+@media(max-width:768px){
+    .more-about-container{
+        flex-direction: column;
+    }
 }
 .more-about-item{
     padding: 10px;
@@ -73,6 +88,43 @@ margin-top: 40%;
     margin-bottom: 10px;
 }
 
+/*houses and penthouses*/
+
+.title{
+    text-align: center;
+    display: flex;
+}
+.houses-container{ 
+    display: flex;
+    flex-direction: row;
+}
+
+
+.house-item{
+    background-color: #dedede;
+    margin-right: 10px;
+}
+
+@media(max-width:768px){
+    .houses-penthouses-title{
+        display: flex;
+    }
+    .houses-container{
+        flex-direction: column;
+    }
+    .house-item{
+        margin-top: 10px;
+    }
+}
+.house-text{
+    padding: 10px;
+}
+.icon-container{
+    display: flex;
+}
+.icon-item{
+    display: flex;
+}
 /*contact*/
 fieldset{
     padding: 20px;
@@ -98,6 +150,69 @@ legend{
     border-radius: 5px;
     width: 70%;
 }
+
+.send-btn{
+    display: block;
+    margin: 20px;
+}
+
+/*about*/
+
+.title{
+    text-align: center;
+    display: flex;
+}
+.houses-container{ 
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media(max-width:768px){
+    .houses-penthouses-title{
+        display: flex;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-item{
+        margin-top: 10px;
+    }
+}
+
+.read-more-btn{
+    display: block;
+    margin: 20px;
+}
+
+/*blog*/
+
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:768px){
+    .container{
+        width: 95%;
+    }
+}
+.blog-container{
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 40%;
+}
+.blog-item{
+    background-color: white;
+    margin-right: 10px;
+}
+    
+.btn-apply{
+    display: block;
+    margin: 20px;
+}
+
 /*footer*/
 .site-init-a-b{
     background-image: url(/img/encuentra.jpg);
